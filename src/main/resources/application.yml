@@ -1,0 +1,15 @@
+server:
+  port: 8084
+  servlet:
+    contextPath: /api
+
+spring:
+  data:
+    elasticsearch:
+      cluster-name: docker-cluster
+      cluster-nodes: localhost:9300
+      repositories:
+        enabled: true
+      properties:
+        path:
+          home: target/elastic-embedded
